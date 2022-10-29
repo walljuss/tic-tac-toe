@@ -96,3 +96,15 @@
   color: rgb(202, 216, 220);
   background-color: rgb(225, 11, 11);
 }
+
+@media only screen and (max-width: 600px) {
+  * {
+    font-size: 20px;
+  }
+
+  .gameboard {
+    flex-direction: column;
+  }
+
+
+}
