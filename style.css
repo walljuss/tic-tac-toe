@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr 9fr;
+  text-align: center;
+  font-size: 40px;
+}
+
+.gameboard {
+  background-color: aliceblue;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.player {
+  display: flex;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+
+.gameboard .playboard {
+  display: grid;
+  background-color: azure;
+  margin: 0 auto;
+  grid-template: repeat(3, auto)/repeat(3, auto);
+  width: 40vw;
+  height: 40vw;
+}
+
+.cell {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; 
+  margin: 0;
+}
+
+.cellito {
+  margin: 0;
+  height: 60%;
+  width: 60%;
+}
+
+.o-sign {
+  margin: 0;
+  border: 3px solid black;
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+  background-color: lightsalmon;
+}
+
+.x-sign {
+  margin: 0;
+  padding: 0;
+  border: 3px solid black;
+  height: 50%;
+  width: 50%;
+  border-radius: 20%;
+  background-color: lightblue;
+}
+
+.endgame {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  background-color: rgba(176, 159, 159, 0.8);
+  height: 100%;
+  width: 100%;
+  color:rgba(0, 0, 0, 1);
+}
+
+.restartButton {
+  margin: 20px;
+  font-size: 30px;
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.restartButton:hover {
+  color: rgb(202, 216, 220);
+  background-color: rgb(225, 11, 11);
+}

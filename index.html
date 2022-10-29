@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+  <title>Tic-tac-toe</title>
+  
+</head>
+<body>
+  <div class="container">
+    <div class="header">  
+      TIC-TAC-TOE
+    </div>
+    <div class="gameboard">
+      <div class="player playerone">Player 1</div>
+      <div class="playboard">
+        <div class="cell a1"><div class="cellito"></div></div>
+        <div class="cell a2"><div class="cellito"></div></div>
+        <div class="cell a3"><div class="cellito"></div></div>
+        <div class="cell b1"><div class="cellito"></div></div>
+        <div class="cell b2"><div class="cellito"></div></div>
+        <div class="cell b3"><div class="cellito"></div></div>
+        <div class="cell c1"><div class="cellito"></div></div>
+        <div class="cell c2"><div class="cellito"></div></div>
+        <div class="cell c3"><div class="cellito"></div></div>
+      </div>
+      <div class="player playertwo">Player 2</div>
+    </div>
+    <div class="endgame">
+      <p class="endGameText"></p>
+      <button class="restartButton" onClick="resetGame()">Restart</button>
+    </div>
+  </div>
+</body>
+</html>
